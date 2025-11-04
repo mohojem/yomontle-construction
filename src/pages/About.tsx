@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import StatsCounter from "@/components/StatsCounter";
-import teamImage from "@/assets/team-construction.jpg";
+import teamImage from "@/assets/team-photo.jpg";
 import { Award, Users, Target, Heart } from "lucide-react";
 
 const About = () => {

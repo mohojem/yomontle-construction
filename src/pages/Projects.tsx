@@ -2,22 +2,106 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import projectResidential from "@/assets/project-residential.jpg";
-import projectCommercial from "@/assets/project-commercial.jpg";
+import project1 from "@/assets/project-1.jpg";
+import project2 from "@/assets/project-2.jpg";
+import project3 from "@/assets/project-3.jpg";
+import project4 from "@/assets/project-4.jpg";
+import project5 from "@/assets/project-5.jpg";
+import project6 from "@/assets/project-6.jpg";
+import project7 from "@/assets/project-7.jpg";
+import project8 from "@/assets/project-8.jpg";
+import project9 from "@/assets/project-9.jpg";
+import project10 from "@/assets/project-10.jpg";
+import project11 from "@/assets/project-11.jpg";
+import project12 from "@/assets/project-12.jpg";
+import project13 from "@/assets/project-13.jpg";
+import project14 from "@/assets/project-14.jpg";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Modern Residential Build",
-      category: "Residential Construction",
-      image: projectResidential,
-      description: "Complete new home construction with modern architecture, quality finishes, and professional landscaping.",
+      title: "Modern Residential Construction",
+      category: "Residential",
+      image: project1,
+      description: "Complete new home construction with quality finishes and professional workmanship.",
     },
     {
-      title: "Commercial Renovation",
-      category: "Commercial",
-      image: projectCommercial,
-      description: "Full commercial space renovation including interior upgrades, electrical systems, and exterior finishing.",
+      title: "Residential Building Project",
+      category: "Residential",
+      image: project2,
+      description: "Beautiful residential build showcasing our attention to detail and craftsmanship.",
+    },
+    {
+      title: "Home Construction",
+      category: "Residential",
+      image: project3,
+      description: "Quality home building with modern design and durable construction.",
+    },
+    {
+      title: "Residential Development",
+      category: "Residential",
+      image: project4,
+      description: "Professional residential construction meeting the highest standards.",
+    },
+    {
+      title: "House Building Project",
+      category: "Residential",
+      image: project5,
+      description: "Expert construction services for residential properties.",
+    },
+    {
+      title: "Modern Home Build",
+      category: "Residential",
+      image: project6,
+      description: "Contemporary home construction with quality materials and finishes.",
+    },
+    {
+      title: "Residential Construction Work",
+      category: "Residential",
+      image: project7,
+      description: "Professional building services for residential clients.",
+    },
+    {
+      title: "Quality Home Construction",
+      category: "Residential",
+      image: project8,
+      description: "Delivering excellence in residential building projects.",
+    },
+    {
+      title: "New Build Residential",
+      category: "Residential",
+      image: project9,
+      description: "New construction with modern amenities and quality craftsmanship.",
+    },
+    {
+      title: "Residential Building Services",
+      category: "Residential",
+      image: project10,
+      description: "Complete building solutions for residential properties.",
+    },
+    {
+      title: "Home Building Excellence",
+      category: "Residential",
+      image: project11,
+      description: "Professional home construction with attention to every detail.",
+    },
+    {
+      title: "Residential Construction Project",
+      category: "Residential",
+      image: project12,
+      description: "Quality residential builds that stand the test of time.",
+    },
+    {
+      title: "Modern Residential Work",
+      category: "Residential",
+      image: project13,
+      description: "Contemporary construction solutions for modern living.",
+    },
+    {
+      title: "Quality Residential Build",
+      category: "Residential",
+      image: project14,
+      description: "Professional construction services delivering exceptional results.",
     },
   ];
 
@@ -40,13 +124,14 @@ const Projects = () => {
       {/* Projects Gallery */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {projects.map((project, index) => (
               <div
                 key={index}
                 className="group bg-card rounded-2xl overflow-hidden shadow-elegant hover:shadow-gold transition-smooth animate-scale-in"
+                style={{ animationDelay: `${index * 50}ms` }}
               >
-                <div className="relative overflow-hidden h-80">
+                <div className="relative overflow-hidden h-64">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -59,11 +144,11 @@ const Projects = () => {
                     </span>
                   </div>
                 </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-smooth">
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-smooth">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {project.description}
                   </p>
                 </div>
@@ -72,7 +157,7 @@ const Projects = () => {
           </div>
 
           {/* Testimonials */}
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto mt-20">
             <h2 className="text-center mb-12">What Our Clients Say</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-card p-8 rounded-2xl shadow-elegant animate-fade-in">

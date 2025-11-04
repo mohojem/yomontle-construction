@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import logo from "@/assets/logo-yomontle.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,10 +11,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gold rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold text-xl">Y</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src={logo} 
+                alt="Yomontle Construction Logo" 
+                className="h-10 w-auto object-contain bg-white/10 p-1 rounded-lg"
+              />
               <div className="flex flex-col">
                 <span className="font-bold text-lg">YOMONTLE</span>
                 <span className="text-xs text-gold-light">CONSTRUCTION</span>

@@ -5,8 +5,8 @@ import ServiceCard from "@/components/ServiceCard";
 import StatsCounter from "@/components/StatsCounter";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-construction.jpg";
-import teamImage from "@/assets/team-construction.jpg";
-import projectResidential from "@/assets/project-residential.jpg";
+import teamImage from "@/assets/team-photo.jpg";
+import projectResidential from "@/assets/project-1.jpg";
 import {
   Home,
   Wrench,
