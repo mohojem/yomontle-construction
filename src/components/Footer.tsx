@@ -1,22 +1,15 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/logo-yomontle.jpg";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src={logo} 
-                alt="Yomontle Construction Logo" 
-                className="h-10 w-auto object-contain bg-white/10 p-1 rounded-lg"
-              />
+              <img src={logo} alt="Yomontle Construction Logo" className="h-10 w-auto object-contain bg-white/10 p-1 rounded-lg" />
               <div className="flex flex-col">
                 <span className="font-bold text-lg">YOMONTLE</span>
                 <span className="text-xs text-gold-light">CONSTRUCTION</span>
@@ -26,22 +19,10 @@ const Footer = () => {
               Building dreams with integrity and excellence since 2020.
             </p>
             <div className="flex space-x-3">
-              <a
-                href="https://www.facebook.com/yomontleconstruction"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-primary-foreground/10 hover:bg-gold transition-smooth flex items-center justify-center"
-                aria-label="Facebook"
-              >
+              <a href="https://www.facebook.com/yomontleconstruction" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-primary-foreground/10 hover:bg-gold transition-smooth flex items-center justify-center" aria-label="Facebook">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a
-                href="https://www.instagram.com/boipelo_masia"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-primary-foreground/10 hover:bg-gold transition-smooth flex items-center justify-center"
-                aria-label="Instagram"
-              >
+              <a href="https://www.instagram.com/boipelo_masia" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-primary-foreground/10 hover:bg-gold transition-smooth flex items-center justify-center" aria-label="Instagram">
                 <Instagram className="w-4 h-4" />
               </a>
             </div>
@@ -108,19 +89,11 @@ const Footer = () => {
                   081 268 5235
                 </a>
               </li>
-              <li className="flex items-center gap-2 text-sm">
-                <Phone className="w-4 h-4 text-gold" />
-                <a href="tel:0834456901" className="hover:text-gold transition-smooth">
-                  083 445 6901
-                </a>
-              </li>
+              
               <li className="flex items-center gap-2 text-sm">
                 <Mail className="w-4 h-4 text-gold" />
-                <a
-                  href="mailto:boipelolesiam@gmail.com"
-                  className="hover:text-gold transition-smooth break-all"
-                >
-                  boipelolesiam@gmail.com
+                <a href="mailto:boipelolesiam@gmail.com" className="hover:text-gold transition-smooth break-all">
+                  boipelomasia68@gmail.com
                 </a>
               </li>
             </ul>
@@ -139,8 +112,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
