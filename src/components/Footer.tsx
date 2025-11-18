@@ -8,12 +8,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-3 mb-4">
-              <img src={logo} alt="Yomontle Construction Logo" className="h-10 w-auto object-contain" />
-              <div className="flex flex-col">
-                <span className="font-bold text-lg">YOMONTLE</span>
-                <span className="text-xs text-gold-light">CONSTRUCTION</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-6">
+              <img src={logo} alt="Yomontle Construction Logo" className="h-[90px] w-auto object-contain" />
             </div>
             <p className="text-sm text-primary-foreground/80 mb-4">
               Building dreams with integrity and excellence since 2020.
