@@ -40,7 +40,7 @@ const Navigation = () => {
             <img 
               src={logo} 
               alt="Yomontle Construction Logo" 
-              className="h-12 w-auto object-contain"
+              className="h-12 w-auto object-contain bg-background p-1 rounded-lg"
             />
             <div className="flex flex-col">
               <span className="font-bold text-xl text-foreground">YOMONTLE</span>
