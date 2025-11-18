@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
-import logo from "@/assets/logo-yomontle.jpg";
+import logo from "@/assets/logo-yomontle.png";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-primary text-primary-foreground">
@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img src={logo} alt="Yomontle Construction Logo" className="h-10 w-auto object-contain bg-white/10 p-1 rounded-lg" />
+              <img src={logo} alt="Yomontle Construction Logo" className="h-10 w-auto object-contain" />
               <div className="flex flex-col">
                 <span className="font-bold text-lg">YOMONTLE</span>
                 <span className="text-xs text-gold-light">CONSTRUCTION</span>

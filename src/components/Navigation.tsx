@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
-import logo from "@/assets/logo-yomontle.jpg";
+import logo from "@/assets/logo-yomontle.png";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -35,7 +35,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="Yomontle Construction Logo" className="h-12 w-auto object-contain bg-background p-1 rounded-lg" />
+            <img src={logo} alt="Yomontle Construction Logo" className="h-12 w-auto object-contain" />
             <div className="flex flex-col">
               
               
