@@ -31,11 +31,11 @@ const Navigation = () => {
     path: "/contact"
   }];
   return <nav className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-elegant" : "bg-transparent"}`}>
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="Yomontle Construction Logo" className="h-16 w-auto object-contain" />
+            <img src={logo} alt="Yomontle Construction Logo" className="h-[90px] w-auto object-contain" />
             <div className="flex flex-col">
               
               
