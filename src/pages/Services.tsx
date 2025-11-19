@@ -15,7 +15,6 @@ import {
   Building2,
   Hammer,
   Truck,
-  FileText,
 } from "lucide-react";
 
 const Services = () => {
@@ -85,12 +84,6 @@ const Services = () => {
       title: "Repair Services",
       description:
         "Quick and reliable repair services for all aspects of your property. We fix issues efficiently to minimize disruption.",
-    },
-    {
-      icon: FileText,
-      title: "House Plan Prototypes",
-      description:
-        "Custom house plan design and prototyping services. We help bring your dream home from concept to detailed architectural plans.",
     },
   ];
 
