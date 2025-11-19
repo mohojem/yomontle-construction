@@ -97,10 +97,6 @@ const Contact = () => {
                         <a href="tel:0812685235" className="hover:text-primary transition-smooth">
                           081 268 5235
                         </a>
-                        <br />
-                        <a href="tel:0834456901" className="hover:text-primary transition-smooth">
-                          083 445 6901
-                        </a>
                       </p>
                     </div>
                   </div>
@@ -113,10 +109,10 @@ const Contact = () => {
                       <h4 className="font-semibold mb-1">Email</h4>
                       <p className="text-muted-foreground">
                         <a
-                          href="mailto:boipelolesiam@gmail.com"
+                          href="mailto:boipelomasia68@gmail.com"
                           className="hover:text-primary transition-smooth break-all"
                         >
-                          boipelolesiam@gmail.com
+                          boipelomasia68@gmail.com
                         </a>
                       </p>
                     </div>
@@ -148,15 +144,6 @@ const Contact = () => {
                     <p className="text-sm text-muted-foreground mt-1">
                       <a href="tel:0812685235" className="hover:text-primary transition-smooth">
                         081 268 5235
-                      </a>
-                    </p>
-                  </div>
-                  <div className="pt-4 border-t border-border">
-                    <h4 className="font-semibold text-lg text-primary">Palesa Mamooe</h4>
-                    <p className="text-sm text-muted-foreground">Co-Director</p>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      <a href="tel:0834456901" className="hover:text-primary transition-smooth">
-                        083 445 6901
                       </a>
                     </p>
                   </div>
