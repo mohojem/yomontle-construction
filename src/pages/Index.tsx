@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
 import StatsCounter from "@/components/StatsCounter";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-construction.jpg";
+import heroImage from "@/assets/hero-new-construction.png";
 import teamImage from "@/assets/team-photo.jpg";
 import projectResidential from "@/assets/project-1.jpg";
 import {
