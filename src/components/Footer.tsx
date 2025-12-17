@@ -102,9 +102,17 @@ const Footer = () => {
             <p className="text-sm text-primary-foreground/60">
               © {currentYear} Yomontle Construction. All rights reserved.
             </p>
-            <p className="text-sm text-primary-foreground/60">
-              Registration No: 2020/076861/07 | BBBEE Level 1 Contributor
-            </p>
+            <div className="flex flex-wrap items-center gap-4 text-sm text-primary-foreground/60">
+              <Link to="/privacy" className="hover:text-gold transition-smooth">
+                Privacy Policy
+              </Link>
+              <span>|</span>
+              <Link to="/terms" className="hover:text-gold transition-smooth">
+                Terms of Service
+              </Link>
+              <span>|</span>
+              <span>Reg: 2020/076861/07</span>
+            </div>
           </div>
         </div>
       </div>
