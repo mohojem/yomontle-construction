@@ -17,16 +17,29 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
+      toast.error("Please fill in all required fields");
+      return;
+    }
+    
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success("Thank you! We'll get back to you soon.", {
-        description: "Your quote request has been received successfully.",
-      });
-      setFormData({ name: "", email: "", phone: "", message: "" });
-      setIsSubmitting(false);
-    }, 1000);
+    // Create mailto link as fallback for static hosting
+    const subject = encodeURIComponent(`Quote Request from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nProject Details:\n${formData.message}`
+    );
+    
+    // Open email client
+    window.location.href = `mailto:boipelomasia68@gmail.com?subject=${subject}&body=${body}`;
+    
+    toast.success("Opening your email client...", {
+      description: "Please send the email to complete your quote request.",
+    });
+    
+    setFormData({ name: "", email: "", phone: "", message: "" });
+    setIsSubmitting(false);
   };
 
   const handleChange = (
