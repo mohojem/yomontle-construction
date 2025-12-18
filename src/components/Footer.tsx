@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-6">
               <img src={logo} alt="Yomontle Construction Logo" className="h-[120px] w-auto object-contain" />
             </div>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-sm text-foreground mb-4">
               Building dreams with integrity and excellence since 2020.
             </p>
             <div className="flex space-x-3">
@@ -62,7 +62,7 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h3 className="font-bold text-lg mb-4 text-primary">Our Services</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-2 text-sm text-foreground">
               <li>General Building</li>
               <li>Renovations</li>
               <li>Plumbing Services</li>
@@ -78,7 +78,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
-                <span className="text-muted-foreground">
+                <span className="text-foreground">
                   201 JB Mafora Gladys Mthembu St, Block 3, Rocklands, Bloemfontein, 9323
                 </span>
               </li>
@@ -107,10 +107,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-foreground">
               © {currentYear} Yomontle Construction. All rights reserved.
             </p>
-            <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+            <div className="flex flex-wrap items-center gap-4 text-sm text-foreground">
               <Link to="/privacy" className="hover:text-primary transition-smooth">
                 Privacy Policy
               </Link>
