@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo-yomontle.png";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,6 +55,16 @@ const Navigation = () => {
               <Phone className="w-4 h-4" />
               081 268 5235
             </a>
+            <a 
+              href="https://wa.me/27812685235" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm font-medium text-green-600 hover:text-green-700 transition-smooth"
+              aria-label="Chat on WhatsApp"
+            >
+              <MessageCircle className="w-4 h-4" />
+              WhatsApp
+            </a>
             <Link to="/contact">
               <Button className="gradient-gold font-semibold shadow-gold hover:shadow-lg transition-smooth">
                 Request Quote
@@ -77,6 +87,16 @@ const Navigation = () => {
               <a href="tel:0812685235" className="flex items-center gap-2 py-2 text-sm font-medium text-muted-foreground">
                 <Phone className="w-4 h-4" />
                 081 268 5235
+              </a>
+              <a 
+                href="https://wa.me/27812685235" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 py-2 text-sm font-medium text-green-600"
+                aria-label="Chat on WhatsApp"
+              >
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp Us
               </a>
               <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                 <Button className="w-full gradient-gold font-semibold">
