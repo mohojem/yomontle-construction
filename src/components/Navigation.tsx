@@ -30,7 +30,7 @@ const Navigation = () => {
     name: "Contact",
     path: "/contact"
   }];
-  return <nav className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-elegant" : "bg-transparent"}`}>
+  return <nav className="fixed top-0 left-0 right-0 z-50 bg-background shadow-elegant">
       <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -59,7 +59,7 @@ const Navigation = () => {
               href="https://wa.me/27812685235" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm font-medium text-green-600 hover:text-green-700 transition-smooth"
+              className="flex items-center gap-2 text-sm font-medium text-primary hover:text-gold transition-smooth"
               aria-label="Chat on WhatsApp"
             >
               <MessageCircle className="w-4 h-4" />
@@ -92,7 +92,7 @@ const Navigation = () => {
                 href="https://wa.me/27812685235" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 py-2 text-sm font-medium text-green-600"
+                className="flex items-center gap-2 py-2 text-sm font-medium text-primary"
                 aria-label="Chat on WhatsApp"
               >
                 <MessageCircle className="w-4 h-4" />
