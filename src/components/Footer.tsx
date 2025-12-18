@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <img src={logo} alt="Yomontle Construction Logo" className="h-[90px] w-auto object-contain" />
+              <img src={logo} alt="Yomontle Construction Logo" className="h-[120px] w-auto object-contain" />
             </div>
             <p className="text-sm text-muted-foreground mb-4">
               Building dreams with integrity and excellence since 2020.
