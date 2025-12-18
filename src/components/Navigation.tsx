@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, MessageCircle } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo-yomontle.png";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,24 +50,10 @@ const Navigation = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:0812685235" className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-smooth">
-              <Phone className="w-4 h-4" />
-              081 268 5235
-            </a>
-            <a 
-              href="https://wa.me/27812685235" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm font-medium text-primary hover:text-gold transition-smooth"
-              aria-label="Chat on WhatsApp"
-            >
-              <MessageCircle className="w-4 h-4" />
-              WhatsApp
-            </a>
+          <div className="hidden md:flex items-center">
             <Link to="/contact">
               <Button className="gradient-gold font-semibold shadow-gold hover:shadow-lg transition-smooth">
-                Request Quote
+                Contact Us
               </Button>
             </Link>
           </div>
@@ -81,28 +67,9 @@ const Navigation = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && <div className="md:hidden mt-4 pb-4 animate-fade-in">
             <div className="flex flex-col space-y-4">
-              {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => setIsMobileMenuOpen(false)} className={`font-medium py-2 transition-smooth ${location.pathname === link.path ? "text-primary" : "text-foreground"}`}>
+            {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => setIsMobileMenuOpen(false)} className={`font-medium py-2 transition-smooth ${location.pathname === link.path ? "text-primary" : "text-foreground"}`}>
                   {link.name}
                 </Link>)}
-              <a href="tel:0812685235" className="flex items-center gap-2 py-2 text-sm font-medium text-muted-foreground">
-                <Phone className="w-4 h-4" />
-                081 268 5235
-              </a>
-              <a 
-                href="https://wa.me/27812685235" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 py-2 text-sm font-medium text-primary"
-                aria-label="Chat on WhatsApp"
-              >
-                <MessageCircle className="w-4 h-4" />
-                WhatsApp Us
-              </a>
-              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                <Button className="w-full gradient-gold font-semibold">
-                  Request Quote
-                </Button>
-              </Link>
             </div>
           </div>}
       </div>
