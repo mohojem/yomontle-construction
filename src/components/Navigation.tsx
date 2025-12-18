@@ -26,20 +26,13 @@ const Navigation = () => {
   }, {
     name: "Projects",
     path: "/projects"
-  }, {
-    name: "Contact",
-    path: "/contact"
   }];
   return <nav className="fixed top-0 left-0 right-0 z-50 bg-background shadow-elegant">
       <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex-shrink-0">
             <img src={logo} alt="Yomontle Construction Logo" className="h-[120px] w-auto object-contain" />
-            <div className="flex flex-col">
-              
-              
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
