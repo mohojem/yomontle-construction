@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo-yomontle.png";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,6 +20,9 @@ const Footer = () => {
               </a>
               <a href="https://www.instagram.com/boipelo_masia" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-primary-foreground/10 hover:bg-gold transition-smooth flex items-center justify-center" aria-label="Instagram">
                 <Instagram className="w-4 h-4" />
+              </a>
+              <a href="https://wa.me/27812685235" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-green-600 hover:bg-green-700 transition-smooth flex items-center justify-center" aria-label="WhatsApp">
+                <MessageCircle className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -85,7 +88,12 @@ const Footer = () => {
                   081 268 5235
                 </a>
               </li>
-              
+              <li className="flex items-center gap-2 text-sm">
+                <MessageCircle className="w-4 h-4 text-green-500" />
+                <a href="https://wa.me/27812685235" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-smooth">
+                  WhatsApp Us
+                </a>
+              </li>
               <li className="flex items-center gap-2 text-sm">
                 <Mail className="w-4 h-4 text-gold" />
                 <a href="mailto:boipelomasia68@gmail.com" className="hover:text-gold transition-smooth break-all">
